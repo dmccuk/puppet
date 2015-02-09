@@ -18,5 +18,7 @@
 class motd {
 
   file { '/etc/motd':
-}
+    ensure  => present,
+    content => 'welcome!\n',
+  }
 }
