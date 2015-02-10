@@ -1,6 +1,9 @@
-node default {
 
-file {
-"/tmp/helloworld.txt": content => "hello, world";
-}
+notify {"Agent connection is successful": }
+
+node default { }
+
+  node 'server-1.den.com' {
+
+    include motd
 }
