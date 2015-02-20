@@ -1,3 +1,8 @@
+#
+notify {"This is the production Site.pp": }
 
-notify {"This is the Development Site.pp": }
+node default {
+
+    include role_web
+}
 
