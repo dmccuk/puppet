@@ -12,5 +12,10 @@ class httpd {
     ensure => running,
     enable => true,
   }
+  file { '/var/www/html/index.html':
+    ensure  => file,
+    path    => '/var/www/html/index.html',
+    content => template('httpd/index.html.erb'),
+  }
 }
 
