@@ -7,5 +7,6 @@ Package {
 
 node default {
   include role_web
+  include '::ntp'
 }
 
