@@ -5,6 +5,6 @@ class motd {
 
   file { '/etc/motd':
     ensure  => present,
-    content => 'welcome!\n',
+    content => 'welcome! This is the production MOTD...! ',
   }
 }
