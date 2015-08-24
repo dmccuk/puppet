@@ -1,7 +1,6 @@
 ---
 classes:
   - ntp
-  - motd
 ntp::restrict:
   -
 ntp::autoupdate: false
