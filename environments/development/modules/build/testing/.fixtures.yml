@@ -1,0 +1,3 @@
+fixtures:
+  symlinks:
+    "testing": "#{source_dir}"

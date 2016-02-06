@@ -1,0 +1,14 @@
+{
+  "name": "dennismccarthy-testing",
+  "version": "0.1.0",
+  "author": "dennismccarthy",
+  "summary": "for testing rspec",
+  "license": "Apache 2.0",
+  "source": "local",
+  "project_page": "ask me",
+  "issues_url": "ask me",
+  "dependencies": [
+    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+  ]
+}
+

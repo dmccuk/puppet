@@ -5,5 +5,8 @@ class role_web {
 
   include motd
   include httpd
+  include ntp
+  include stdlib
+  include phpsysinfo
 
 }

@@ -1,1 +1,0 @@
-All Puppet code within the HTTPD module is kept here.
