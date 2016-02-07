@@ -1,0 +1,31 @@
+  ***************************************************************************
+                              NOTICE TO USERS
+  This is a Private computer system and is the property of
+
+  The Logic Group Enterprises Ltd,
+
+  It is for authorized use only. Users (authorized or unauthorized)
+  have no explicit or implicit expectation of privacy.
+
+  Any or all uses of this system and all files on this system may be
+  intercepted, monitored, recorded, copied, audited, inspected, and disclosed
+  to authorised site, By using this system, the user consents to such
+  interception, monitoring, recording, copying, auditing, inspection, and
+  disclosure at the discretion of authorized site or The Logic Group Ent
+  personnel.
+
+  Unauthorized or improper use of this system may result in administrative
+  disciplinary action and civil and criminal penalties. By continuing to use
+  this system you indicate your awareness of and consent to these terms and
+  conditions of use. LOG OFF IMMEDIATELY if you do not agree to the conditions
+  stated in this warning.
+
+  *****************************************************************************
+<%= scope.lookupvar('::operatingsystem') %> <%= scope.lookupvar('::operatingsystemrelease') %> <%= scope.lookupvar('::architecture') %>
+FQDN:      <%= scope.lookupvar('::fqdn') %> (<%= scope.lookupvar('::ipaddress') %>)
+<% if scope.lookupvar('::processor0') then -%>
+Processor: <%= scope.lookupvar('::processorcount') %>x <%= scope.lookupvar('::processor0') %>
+<% end -%>
+Kernel:    <%= scope.lookupvar('::kernelrelease') %>
+Memory:    <%= scope.lookupvar('::memorysize') %>
+

@@ -1,0 +1,14 @@
+{
+  "name": "acme-auto",
+  "version": "0.3.0",
+  "author": "Nick Strugnell",
+  "summary": "Hiera Include",
+  "license": "GPL v3",
+  "source": "'https://github.com/RedHatEMEA/acme-soe",
+  "project_page": "github",
+  "issues_url": "TLG",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
