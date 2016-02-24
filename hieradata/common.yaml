@@ -1,4 +1,7 @@
 ---
+classes:
+ - role_basic
+
 ntp::autoupdate: true
 ntp::enable: true
 ntp::servers:
