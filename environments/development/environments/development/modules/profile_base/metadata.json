@@ -1,0 +1,14 @@
+{
+  "name": "dennis-profile_base",
+  "version": "0.1.0",
+  "author": "dennis",
+  "summary": "pointer for base modules",
+  "license": "Apache 2.0",
+  "source": "gitlab",
+  "project_page": "Dennis",
+  "issues_url": "Dennis",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+

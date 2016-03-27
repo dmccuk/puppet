@@ -1,0 +1,32 @@
+---
+
+################################################
+# https://github.com/greenaar/puppet-hiera_users
+################################################
+
+# group creation
+users::configure::groups_default:
+  sysadmins:
+    ensure: present
+    gid: 1010
+  logging:
+    ensure: present
+    gid: 1011
+
+# user creation
+users::configure::users_default:
+  first.last:
+    ensure: present
+    managehome: true
+    shell: /bin/bash
+    uid: 5000
+    groups: [ 'sysadmins', 'logging', 'wheel' ]
+    password: password
+    ssh_authorized_keys:
+      first.last@server.name:
+        ensure: present
+        key: KeyG0esHere!!
+        options:
+        type: ssh-rsa
+################################################
+

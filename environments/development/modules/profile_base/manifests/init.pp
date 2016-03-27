@@ -43,5 +43,9 @@ class profile_base {
   include ssh
   include users
   include iptables
-
+  include grub
+  include cis
+  include adauth
+  include at
+  include resolv_conf
 }

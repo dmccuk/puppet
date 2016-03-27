@@ -2,7 +2,17 @@
 classes:
  - role_basic
 
-ntp::autoupdate: true
-ntp::enable: true
+tlg_grub::redhat6::grub_password:
+ - '$1$0p3Ng$Zj/tdn/UOaVQLpKAaNBzk/'
+
 ntp::servers:
-  - puppet-node02.mydomain.com iburst
+ - 192.168.0.1
+
+ntp::restrict:
+ - 192.168.0.1
+
+ntp::broadcastclient: true
+
+tlg_resolv_conf::nameserver:
+ - 192.168.0.1
+

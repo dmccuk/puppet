@@ -1,0 +1,15 @@
+---
+classes:
+  - role_basic
+
+ntp::restrict:
+  -
+ntp::autoupdate: true
+ntp::enable: true
+ntp::servers:
+  - 0.us.pool.ntp.org iburst
+  - 1.us.pool.ntp.org iburst
+  - 2.us.pool.ntp.org iburst
+
+httpd::index_content:
+  - '<H1> WELCOME - INTERNAL HTTPD SERVER</H1>'

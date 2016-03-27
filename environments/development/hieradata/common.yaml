@@ -1,0 +1,8 @@
+---
+classes:
+ - role_basic
+
+ntp::autoupdate: true
+ntp::enable: true
+ntp::servers:
+  - puppet-node02.mydomain.com iburst

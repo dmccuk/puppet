@@ -6,7 +6,7 @@
 1. [Setup - The basics of getting started with users](#setup)
     * [What users affects](#what-users-affects)
     * [Setup requirements](#setup-requirements)
-    * [Beginning with users](#with-users)
+    * [Beginning with users](#beginning-with-users)
 1. [Usage - Configuration options and additional functionality](#usage)
 1. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 1. [Limitations - OS compatibility, etc.](#limitations)

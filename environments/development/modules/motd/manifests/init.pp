@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Class: motd
 #
 # This module manages 'Message Of The Day'
@@ -58,5 +59,12 @@ class motd(
     group   => 'root',
     mode    => '0644',
     content => $file_content,
+=======
+class motd {
+
+  file { '/etc/motd':
+   ensure => file,
+   content => "this is the MOTD file",
+>>>>>>> cad1b08d0a136f420ff5814d7d2870084ff4d47e
   }
 }

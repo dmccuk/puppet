@@ -1,0 +1,20 @@
+{
+  "Gemfile": "6a08ec57f18e97c4ead40a6529d05aa8",
+  "README.md": "72afeecaa214f570ec752680311e30f2",
+  "Rakefile": "3044cde52b8cd8508c8400076a66ef11",
+  "files/generate_cis.sh": "9eff95d414ec9e51cf266821a870e03c",
+  "manifests/boot_log.pp": "f8c451c0d9ab9863ce9aaed5ab9c5631",
+  "manifests/cis_cron.pp": "a2dfc4386cd4bc926d1ca4821ee18c7a",
+  "manifests/fstab.pp": "42b19de978af154c5ec013e74e610490",
+  "manifests/generate_cis_report.pp": "80d005bb1055a8048d1d4549621ed87b",
+  "manifests/init.pp": "62613927895d90c709b45c9681fcbc52",
+  "manifests/login_defs.pp": "19e3fbe419aafe397b853a0a24df6f0b",
+  "manifests/pam.pp": "f4feec03cd51f2a7da896cba3267713c",
+  "manifests/security_limits.pp": "64312eb4e03f2a774fd006d8e7e72ff0",
+  "manifests/sysconfig_init.pp": "a026e8749327a8172fcaf5c904b7ffae",
+  "manifests/sysctl.pp": "72ea4079eaa3142c676b7b9c68fa53eb",
+  "metadata.json": "1ffb7eb2de59288b239b651f16122262",
+  "spec/classes/init_spec.rb": "ca774f889e79f8ba9474c764892c3532",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+  "tests/init.pp": "34c6a8ab457f9600caa0389415531a8c"
+}

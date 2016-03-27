@@ -1,0 +1,5 @@
+#
+class grub::redhat7 ()
+{
+
+}

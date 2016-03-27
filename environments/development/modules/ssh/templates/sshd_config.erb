@@ -50,7 +50,7 @@ SyslogFacility AUTHPRIV
 # Authentication:
 
 #LoginGraceTime 2m
-PermitRootLogin <%= @PermitRootLogin %> 
+PermitRootLogin <%= @PermitRootLogin %>
 #StrictModes yes
 #MaxAuthTries 6
 #MaxSessions 10
@@ -126,9 +126,6 @@ X11Forwarding yes
 #UseLogin no
 #UsePrivilegeSeparation no          # Default for new installations.
 #UsePrivilegeSeparation <%= @UsePrivilegeSeparation %>
-<%= if @osfamily = RedHat -%>
-<%  bar = 42 %>
-<% end -%>
 #PermitUserEnvironment no
 #Compression delayed
 #ClientAliveInterval 0

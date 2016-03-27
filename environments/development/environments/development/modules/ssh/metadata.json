@@ -1,0 +1,14 @@
+{
+  "name": "DennisMcCarthy-ssh",
+  "version": "0.1.0",
+  "author": "DennisMcCarthy",
+  "summary": "Setup SSH and control its configuration",
+  "license": "Apache 2.0",
+  "source": "Local",
+  "project_page": "DennisMcCarthy",
+  "issues_url": "DennisMcCarthy",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+

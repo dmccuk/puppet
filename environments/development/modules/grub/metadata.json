@@ -1,0 +1,16 @@
+{
+  "name": "grub",
+  "version": "0.1.1",
+  "author": "Dennis McCarthy",
+  "summary": "Controls the grub password for all Linux servers built with Sat6.",
+  "license": "Apache 2.0",
+  "source": "puppet/sat6",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ]
+}

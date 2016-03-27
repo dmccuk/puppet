@@ -1,0 +1,12 @@
+{
+  "Gemfile": "6a08ec57f18e97c4ead40a6529d05aa8",
+  "README.md": "7ce609f2c0dcc65eb33c55bc8a947eb6",
+  "Rakefile": "3044cde52b8cd8508c8400076a66ef11",
+  "manifests/init.pp": "a57710c4a741f6367835d820b22d0149",
+  "manifests/redhat6.pp": "59d668e93ac96a019c7c27b3cfd31804",
+  "manifests/redhat7.pp": "ae06467eb61026dd9f51d9f48a7662a5",
+  "metadata.json": "af30c58be6a002b9b4f829394319ce96",
+  "spec/classes/init_spec.rb": "e6e8eb94a9e1b9032bd4d88dafd39692",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+  "tests/init.pp": "9187a4984b9a774cb68d641c689c7f1b"
+}
