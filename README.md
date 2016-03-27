@@ -21,11 +21,69 @@ Added in Hiera.yaml configuration under hieradata/node
 
 Here is my hiera file. Very basic but you get the idea.
 
-        ---
-        :backends:
-          - yaml
-        :yaml:
-          :datadir: /etc/puppet/hieradata
-        :hierarchy:
-          - "node/%{::fqdn}"
-          - common
+---
+	:backends:
+	  - yaml
+	:yaml:
+	  :datadir: /etc/puppet/hieradata
+	:hierarchy:
+	  - "node/%{::fqdn}"
+	  - common
+	  - users
+
+Here is my common.yaml (update as required)
+
+---
+classes:
+ - role_basic
+
+tlg_grub::redhat6::grub_password:
+ - '$1$0p3Ng$Zj/tdn/UOaVQLpKAaNBzk/'
+
+ntp::servers:
+ - 192.168.0.1
+
+ntp::restrict:
+ - 192.168.0.1
+
+ntp::broadcastclient: true
+
+tlg_resolv_conf::nameserver:
+ - 192.168.0.1
+
+
+Here is my users.yaml (Update as required)
+
+---
+
+################################################
+# https://github.com/greenaar/puppet-hiera_users
+################################################
+
+# group creation
+users::configure::groups_default:
+  sysadmins:
+    ensure: present
+    gid: 1010
+  logging:
+    ensure: present
+    gid: 1011
+
+# user creation
+users::configure::users_default:
+  first.last:
+    ensure: present
+    managehome: true
+    shell: /bin/bash
+    uid: 5000
+    groups: [ 'sysadmins', 'logging', 'wheel' ]
+    password: password
+    ssh_authorized_keys:
+      first.last@server.name:
+        ensure: present
+        key: KeyG0esHere!!
+        options:
+        type: ssh-rsa
+################################################
+
+

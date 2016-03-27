@@ -6,7 +6,7 @@
   "license": "GPL v3",
   "source": "'https://github.com/RedHatEMEA/acme-soe",
   "project_page": "github",
-  "issues_url": "TLG",
+  "issues_url": "PUPPET",
   "dependencies": [
     {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
   ]
