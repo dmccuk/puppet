@@ -18,3 +18,14 @@ To use:
 ---
 
 Added in Hiera.yaml configuration under hieradata/node
+
+Here is my hiera file. Very basic but you get the idea.
+
+        ---
+        :backends:
+          - yaml
+        :yaml:
+          :datadir: /etc/puppet/hieradata
+        :hierarchy:
+          - "node/%{::fqdn}"
+          - common
