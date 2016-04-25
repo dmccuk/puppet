@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Base Puppet code
 =======
 # puppet Master code
@@ -24,12 +23,11 @@ Added in Hiera.yaml configuration under hieradata/node
 
 Here is my hiera file. Very basic but you get the idea.
 
-        ---
-        :backends:
-          - yaml
-        :yaml:
-          :datadir: /etc/puppet/hieradata
-        :hierarchy:
-          - "node/%{::fqdn}"
-          - common
->>>>>>> cad1b08d0a136f420ff5814d7d2870084ff4d47e
+    ---
+    :backends:
+    - yaml
+      :yaml:
+      :datadir: /etc/puppet/hieradata
+      :hierarchy:
+    - "node/%{::fqdn}"
+    - common
