@@ -37,7 +37,7 @@ Here is my common.yaml (update as required)
     classes:
      - role_basic
     
-    tlg_grub::redhat6::grub_password:
+    grub::redhat6::grub_password:
      - '$1$0p3Ng$Zj/tdn/UOaVQLpKAaNBzk/'
     
     ntp::servers:
@@ -48,7 +48,7 @@ Here is my common.yaml (update as required)
     
     ntp::broadcastclient: true
     
-    tlg_resolv_conf::nameserver:
+    resolv_conf::nameserver:
      - 192.168.0.1
     
 
