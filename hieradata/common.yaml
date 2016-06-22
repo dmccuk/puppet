@@ -6,13 +6,13 @@ grub::redhat6::grub_password:
  - '$1$0p3Ng$Zj/tdn/UOaVQLpKAaNBzk/'
 
 ntp::servers:
- - 192.168.0.1
+ - 0.centos.pool.ntp.org iburst
+ - 1.centos.pool.ntp.org iburst
+ - 2.centos.pool.ntp.org iburst
+
 
 ntp::restrict:
- - 192.168.0.1
+ - 117.0.0.1
 
 ntp::broadcastclient: true
-
-resolv_conf::nameserver:
- - 192.168.0.1
 
