@@ -10,9 +10,9 @@ To use:
    * move out the puppet directory (mv /etc/puppet /etc/puppet_ORIG
    * initialise git - git init (in /etc)
    * git clone my repo
-   * git clone git@github.com:dmccuk/puppet.git
+      * git clone git@github.com:dmccuk/puppet.git
    * On your node, update your /etc/puppet/puppet.conf file to point to "your" puppet master, then run "puppet agent -t" (I have got some test server names in my config)
-   * To use hiera, create yourself your own fqdn.yaml file and look at the ones already there as examples.
+   * To use hiera I've added some data to mine but feel free to change it. You will need to update your /etc/hiera.yaml file to point to the hieradata directory.
    * Enjoy.
 
 ---
@@ -41,17 +41,15 @@ Here is my common.yaml (update as required)
      - '$1$0p3Ng$Zj/tdn/UOaVQLpKAaNBzk/'
     
     ntp::servers:
-     - 192.168.0.1
+     - 0.centos.pool.ntp.org iburst
+     - 1.centos.pool.ntp.org iburst
     
     ntp::restrict:
-     - 192.168.0.1
+     - 127.0.0.1
     
     ntp::broadcastclient: true
     
-    resolv_conf::nameserver:
-     - 192.168.0.1
-    
-
+---
 Here is my users.yaml (Update as required)
 
     ################################################
