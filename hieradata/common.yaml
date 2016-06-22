@@ -12,7 +12,7 @@ ntp::servers:
 
 
 ntp::restrict:
- - 117.0.0.1
+ - 127.0.0.1
 
 ntp::broadcastclient: true
 
