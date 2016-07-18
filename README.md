@@ -31,6 +31,11 @@ Here is my hiera file. Very basic but you get the idea.
 	  - common
 	  - users
 
+  To make hieradata follow my environments (Directory Environments) I'll need to update this line like this:
+  (e.g. :datadir: /etc/puppet/environments/%{::environment}/hieradata)
+
+  This way the local variables being used won't need to be added into the main hieradata location to test the code. The local variables will be picked up as part of the run.
+
 Here is my common.yaml (update as required)
 
     ---
